@@ -1,0 +1,48 @@
+Addresses
+=========
+
+input routine 1767
+
+length-prefixed input string 25974
+
+object names/descriptions start at 18062:-
+
+18062: tablet
+18206: empty lantern
+18344: lantern
+18468: lit lantern
+18568: can
+18618: red coin
+18769: shiny coin
+18852: concave coin
+18953: blue coin
+19029: teleporter
+19113: business card
+19192: orb
+19258: mirror
+19384: orange book
+22093: journal
+
+other strings:
+
+25866: 'a-z[A-Z]'
+25919: 'dbqpwuiolxv8WTYUIOAHXVM'
+
+25943: 'go'
+25946: 'look'
+25956: 'inv'
+25951: 'help'
+25956: 'inv'
+25960: 'take'
+25965: 'drop'
+25970: 'use'
+
+map is split between 2317+ and 26900+
+
+2317: Foothills
+
+action consequences start at 26007:
+
+Location descriptions
+
+6142: Foothills

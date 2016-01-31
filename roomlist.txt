@@ -1,0 +1,1823 @@
+## Object 2668 ##
+== tablet ==
+
+The tablet seems appropriate for use as a writing surface but is unfortunately blank.  Perhaps you should USE it as a writing surface...
+
+Location: 2317
+
+Subroutine @ 4720
+04720: push A
+04722: push B
+04724: push C
+04726: push D
+04728: push A
+04730: push B
+04732: push C
+04734:  set A, 28369
+04737:  set B, 1531
+04740:  add C, 7749, 9247
+04744: call 1458
+04746:  pop C
+04748:  pop B
+04750:  pop A
+04752:  set A, 4242
+04755:  set B, 25866
+04758:  set C, 32767
+04761:  set D, 28397
+04764: call 1841
+04766: push A
+04768: push B
+04770: push C
+04772:  set A, 28401
+04775:  set B, 1531
+04778:  add C, 1009, 4978
+04782: call 1458
+04784:  pop C
+04786:  pop B
+04788:  pop A
+04790:  pop D
+04792:  pop C
+04794:  pop B
+04796:  pop A
+04798:  ret 
+
+## Object 2672 ##
+== empty lantern ==
+
+The lantern seems to have quite a bit of wear but appears otherwise functional.  It is, however, sad that it is out of oil.
+
+Location: 2357
+
+Subroutine @ 0
+<None>
+
+## Object 2676 ##
+== lantern ==
+
+The lantern seems to have quite a bit of wear but appears otherwise functional.  It is off but happily full of oil.
+
+Location: 32767
+
+Subroutine @ 4885
+04885: push A
+04887:  add A, 2676, 2
+04891: wmem A, 32767
+04894:  add A, 2680, 2
+04898: wmem A, 0
+04901: push A
+04903: push B
+04905: push C
+04907:  set A, 28569
+04910:  set B, 1531
+04913:  add C, 13189, 10608
+04917: call 1458
+04919:  pop C
+04921:  pop B
+04923:  pop A
+04925: wmem 2733, 0
+04928:  pop A
+04930:  ret 
+
+## Object 2680 ##
+== lit lantern ==
+
+The lantern seems to have quite a bit of wear.  It is lit and producing a bright light.
+
+Location: 32767
+
+Subroutine @ 4931
+04931: push A
+04933:  add A, 2676, 2
+04937: wmem A, 0
+04940:  add A, 2680, 2
+04944: wmem A, 32767
+04947: push A
+04949: push B
+04951: push C
+04953:  set A, 28595
+04956:  set B, 1531
+04959:  add C, 8309, 24301
+04963: call 1458
+04965:  pop C
+04967:  pop B
+04969:  pop A
+04971: wmem 2733, 0
+04974:  pop A
+04976:  ret 
+
+## Object 2684 ##
+== can ==
+
+This can is full of high-quality lantern oil.
+
+Location: 2417
+
+Subroutine @ 4799
+04799: push A
+04801:  add A, 2672, 2
+04805: rmem A, A
+04808:   jt A, 4858
+04811:  add A, 2684, 2
+04815: wmem A, 32767
+04818:  add A, 2672, 2
+04822: wmem A, 32767
+04825:  add A, 2676, 2
+04829: wmem A, 0
+04832: push A
+04834: push B
+04836: push C
+04838:  set A, 28453
+04841:  set B, 1531
+04844:  add C, 4301, 9120
+04848: call 1458
+04850:  pop C
+04852:  pop B
+04854:  pop A
+04856:  jmp 4882
+04858: push A
+04860: push B
+04862: push C
+04864:  set A, 28510
+04867:  set B, 1531
+04870:  add C, 18555, 1265
+04874: call 1458
+04876:  pop C
+04878:  pop B
+04880:  pop A
+04882:  pop A
+04884:  ret 
+
+## Object 2688 ##
+== red coin ==
+
+This coin is made of a red metal.  It has two dots on one side.
+
+Location: 2452
+
+Subroutine @ 5360
+05360: push A
+05362: push B
+05364:  set A, 2688
+05367:  set B, 2
+05370: call 4977
+05372:  pop B
+05374:  pop A
+05376:  ret 
+
+## Object 2692 ##
+== corroded coin ==
+
+This coin is somewhat corroded.  It has a triangle on one side.
+
+Location: 2473
+
+Subroutine @ 5377
+05377: push A
+05379: push B
+05381:  set A, 2692
+05384:  set B, 3
+05387: call 4977
+05389:  pop B
+05391:  pop A
+05393:  ret 
+
+## Object 2696 ##
+== shiny coin ==
+
+This coin is somehow still quite shiny.  It has a pentagon on one side.
+
+Location: 2483
+
+Subroutine @ 5394
+05394: push A
+05396: push B
+05398:  set A, 2696
+05401:  set B, 5
+05404: call 4977
+05406:  pop B
+05408:  pop A
+05410:  ret 
+
+## Object 2700 ##
+== concave coin ==
+
+This coin is slightly rounded, almost like a tiny bowl.  It has seven dots on one side.
+
+Location: 2468
+
+Subroutine @ 5411
+05411: push A
+05413: push B
+05415:  set A, 2700
+05418:  set B, 7
+05421: call 4977
+05423:  pop B
+05425:  pop A
+05427:  ret 
+
+## Object 2704 ##
+== blue coin ==
+
+This coin is made of a blue metal.  It has nine dots on one side.
+
+Location: 2478
+
+Subroutine @ 5428
+05428: push A
+05430: push B
+05432:  set A, 2704
+05435:  set B, 9
+05438: call 4977
+05440:  pop B
+05442:  pop A
+05444:  ret 
+
+## Object 2708 ##
+== teleporter ==
+
+This small device has a button on it and reads "teleporter" on the side.
+
+Location: 2463
+
+Subroutine @ 5445
+05445: push A
+05447: push B
+05449: push C
+05451:   jf H, 5605
+05454: push A
+05456: push B
+05458: push C
+05460:  set A, 28844
+05463:  set B, 1531
+05466:  add C, 7952, 17624
+05470: call 1458
+05472:  pop C
+05474:  pop B
+05476:  pop A
+05478: noop 
+05479: noop 
+05480: noop 
+05481: noop 
+05482: noop 
+05483:  set A, 4
+05486:  set B, 1
+05489: call 6027
+05491:   eq B, A, 6
+05495:   jf B, 5579
+05498: push A
+05500: push B
+05502: push C
+05504:  set A, 29014
+05507:  set B, 1531
+05510:  add C, 1415, 4080
+05514: call 1458
+05516:  pop C
+05518:  pop B
+05520:  pop A
+05522:  set A, H
+05525:  set B, 25866
+05528:  set C, 32767
+05531: push D
+05533:  set D, 29241
+05536: call 1841
+05538:  pop D
+05540: push A
+05542: push B
+05544: push C
+05546:  set A, 29245
+05549:  set B, 1531
+05552:  add C, 28385, 1938
+05556: call 1458
+05558:  pop C
+05560:  pop B
+05562:  pop A
+05564: wmem 2732, 2498
+05567: wmem 2733, 0
+05570:  add B, 2708, 2
+05574: wmem B, 32767
+05577:  jmp 5714
+05579: push A
+05581: push B
+05583: push C
+05585:  set A, 29400
+05588:  set B, 1531
+05591:  add C, 461, 536
+05595: call 1458
+05597:  pop C
+05599:  pop B
+05601:  pop A
+05603:  jmp 5714
+05605: push A
+05607: push B
+05609: push C
+05611:  set A, 29545
+05614:  set B, 1531
+05617:  add C, 572, 14889
+05621: call 1458
+05623:  pop C
+05625:  pop B
+05627:  pop A
+05629:  set A, 0
+05632:  add C, 1, 27101
+05636: rmem B, C
+05639:  add A, A, B
+05643: mult A, A, 31660
+05647: call 2125
+05649: rmem B, 27101
+05652:  add B, B, 27101
+05656:  add C, C, 1
+05660:   gt B, C, B
+05664:   jf B, 5636
+05667:  set B, 25866
+05670:  set C, 32767
+05673: push D
+05675:  set D, 29663
+05678: call 1841
+05680:  pop D
+05682: push A
+05684: push B
+05686: push C
+05688:  set A, 29667
+05691:  set B, 1531
+05694:  add C, 11933, 2914
+05698: call 1458
+05700:  pop C
+05702:  pop B
+05704:  pop A
+05706: wmem 2732, 2488
+05709: wmem 2733, 0
+05712:  jmp 5714
+05714:  pop C
+05716:  pop B
+05718:  pop A
+05720:  ret 
+
+## Object 2712 ##
+== business card ==
+
+This business card has "synacor.com" printed in red on one side.
+
+Location: 2488
+
+Subroutine @ 0
+<None>
+
+## Object 2724 ##
+== strange book ==
+
+The cover of this book subtly swirls with colors.  It is titled "A Brief Introduction to Interdimensional Physics".  It reads:
+
+Recent advances in interdimensional physics have produced fascinating
+predictions about the fundamentals of our universe!  For example,
+interdimensional physics seems to predict that the universe is, at its root, a
+purely mathematical construct, and that all events are caused by the
+interactions between eight pockets of energy called "registers".
+Furthermore, it seems that while the lower registers primarily control mundane
+things like sound and light, the highest register (the so-called "eighth
+register") is used to control interdimensional events such as teleportation.
+
+A hypothetical such teleportation device would need to have have exactly two
+destinations.  One destination would be used when the eighth register is at its
+minimum energy level - this would be the default operation assuming the user
+has no way to control the eighth register.  In this situation, the teleporter
+should send the user to a preconfigured safe location as a default.
+
+The second destination, however, is predicted to require a very specific
+energy level in the eighth register.  The teleporter must take great care to
+confirm that this energy level is exactly correct before teleporting its user!
+If it is even slightly off, the user would (probably) arrive at the correct
+location, but would briefly experience anomalies in the fabric of reality
+itself - this is, of course, not recommended.  Any teleporter would need to test
+the energy level in the eighth register and abort teleportation if it is not
+exactly correct.
+
+This required precision implies that the confirmation mechanism would be very
+computationally expensive.  While this would likely not be an issue for large-
+scale teleporters, a hypothetical hand-held teleporter would take billions of
+years to compute the result and confirm that the eighth register is correct.
+
+If you find yourself trapped in an alternate dimension with nothing but a
+hand-held teleporter, you will need to extract the confirmation algorithm,
+reimplement it on more powerful hardware, and optimize it.  This should, at the
+very least, allow you to determine the value of the eighth register which would
+have been accepted by the teleporter's confirmation mechanism.
+
+Then, set the eighth register to this value, activate the teleporter, and
+bypass the confirmation mechanism.  If the eighth register is set correctly, no
+anomalies should be experienced, but beware - if it is set incorrectly, the
+now-bypassed confirmation mechanism will not protect you!
+
+Of course, since teleportation is impossible, this is all totally ridiculous.
+
+Location: 2488
+
+Subroutine @ 0
+<None>
+
+## Object 2728 ##
+== journal ==
+
+Fireflies were using this dusty old journal as a resting spot until you scared them off.  It reads:
+
+Day 1: We have reached what seems to be the final in a series of puzzles guarding an ancient treasure.  I suspect most adventurers give up long before this point, but we're so close!  We must press on!
+
+Day 1: P.S.: It's a good thing the island is tropical.  We should have food for weeks!
+
+Day 2: The vault appears to be sealed by a mysterious force - the door won't budge an inch.  We don't have the resources to blow it open, and I wouldn't risk damaging the contents even if we did.  We'll have to figure out the lock mechanism.
+
+Day 3: The door to the vault has a number carved into it.  Each room leading up to the vault has more numbers or symbols embedded in mosaics in the floors.  We even found a strange glass orb in the antechamber on a pedestal itself labeled with a number.  What could they mean?
+
+Day 5: We finally built up the courage to touch the strange orb in the antechamber.  It flashes colors as we carry it from room to room, and sometimes the symbols in the rooms flash colors as well.  It simply evaporates if we try to leave with it, but another appears on the pedestal in the antechamber shortly thereafter.  It also seems to do this even when we return with it to the antechamber from the other rooms.
+
+Day 8: When the orb is carried to the vault door, the numbers on the door flash black, and then the orb evaporates.  Did we do something wrong?  Doesn't the door like us?  We also found a small hourglass near the door, endlessly running.  Is it waiting for something?
+
+Day 13: Some of my crew swear the orb actually gets heaver or lighter as they walk around with it.  Is that even possible?  They say that if they walk through certain rooms repeatedly, they feel it getting lighter and lighter, but it eventually just evaporates and a new one appears as usual.
+
+Day 21: Now I can feel the orb changing weight as I walk around.  It depends on the area - the change is very subtle in some places, but certainly more noticeable in others, especially when I walk into a room with a larger number or out of a room marked '*'.  Perhaps we can actually control the weight of this mysterious orb?
+
+Day 34: One of the crewmembers was wandering the rooms today and claimed that the numbers on the door flashed white as he approached!  He said the door still didn't open, but he noticed that the hourglass had run out and flashed black.  When we went to check on it, it was still running like it always does.  Perhaps he is going mad?  If not, which do we need to appease: the door or the hourglass?  Both?
+
+Day 55: The fireflies are getting suspicious.  One of them looked at me funny today and then flew off.  I think I saw another one blinking a little faster than usual.  Or was it a little slower?  We are getting better at controlling the weight of the orb, and we think that's what the numbers are all about.  The orb starts at the weight labeled on the pedestal, and goes down as we leave a room marked '-', up as we leave a room marked '+', and up even more as we leave a room marked '*'.  Entering rooms with larger numbers has a greater effect.
+
+Day 89: Every once in a great while, one of the crewmembers has the same story: that the door flashes white, the hourglass had already run out, it flashes black, and the orb evaporates.  Are we too slow?  We can't seem to find a way to make the orb's weight match what the door wants before the hourglass runs out.  If only we could find a shorter route through the rooms...
+
+Day 144: We are abandoning the mission.  None of us can work out the solution to the puzzle.  I will leave this journal here to help future adventurers, though I am not sure what help it will give.  Good luck!
+
+Location: 2553
+
+Subroutine @ 0
+<None>
+
+## Object 2716 ##
+== orb ==
+
+This is a clear glass sphere about the size of a tennis ball.
+
+Location: 2623
+
+Subroutine @ 0
+<None>
+
+## Object 2720 ##
+== mirror ==
+
+This is a rather mundane hand-held mirror from the otherwise magnificent vault room.  What USE could it possibly have?
+
+Location: 2643
+
+Subroutine @ 5721
+05721: push A
+05723: push B
+05725: push C
+05727: push D
+05729: push A
+05731: push B
+05733: push C
+05735:  set A, 29757
+05738:  set B, 1531
+05741:  add C, 7009, 2074
+05745: call 1458
+05747:  pop C
+05749:  pop B
+05751:  pop A
+05753: rmem A, 3955
+05756: rmem B, 3956
+05759: call 2125
+05761: rmem B, 3957
+05764: call 2125
+05766:  set B, 25919
+05769:  set C, 4
+05772: push D
+05774:  set D, 29942
+05777: call 1841
+05779:  pop D
+05781: push A
+05783: push B
+05785: push C
+05787:  set A, 29946
+05790:  set B, 1531
+05793:  add C, 8861, 5594
+05797: call 1458
+05799:  pop C
+05801:  pop B
+05803:  pop A
+05805:  pop D
+05807:  pop C
+05809:  pop B
+05811:  pop A
+05813:  ret 
+
+========================================================================
+## Room 2317 ##
+== Foothills ==
+
+You find yourself standing at the base of an enormous mountain.  At its base to the north, there is a massive doorway.  A sign nearby reads "Keep out!  Definitely no treasure within!"
+
+Exits are
+- doorway (Room 2327)
+- south (Room 2322)
+
+Subroutine @ 0
+<None>
+
+**Objects here:-
+    tablet
+------------------------------------------------------------------------
+## Room 2322 ##
+== Foothills ==
+
+As you begin to leave, you feel the urge for adventure pulling you back...
+
+Exits are
+- north (Room 2317)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2327 ##
+== Dark cave ==
+
+This seems to be the mouth of a deep cave.  As you peer north into the darkness, you think you hear the echoes of bats deeper within.
+
+Exits are
+- north (Room 2332)
+- south (Room 2317)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2332 ##
+== Dark cave ==
+
+The cave is somewhat narrow here, and the light from the doorway to the south is quite dim.
+
+Exits are
+- north (Room 2337)
+- south (Room 2327)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2337 ##
+== Dark cave ==
+
+The cave acoustics dramatically change as you find yourself at a legde above a large chasm.  There is barely enough light here to notice a rope bridge leading out into the dark emptiness.
+
+Exits are
+- bridge (Room 2342)
+- south (Room 2327)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2342 ##
+== Rope bridge ==
+
+This rope bridge creaks as you walk along it.  You aren't sure how old it is, or whether it can even support your weight.
+
+Exits are
+- continue (Room 2347)
+- back (Room 2337)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2347 ##
+== Falling through the air! ==
+
+As you continue along the bridge, it snaps!  You try to grab the bridge, but it evades your grasp in the darkness.  You are plummeting quickly downward into the chasm...
+
+Exits are
+- down (Room 2352)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2352 ##
+== Moss cavern ==
+
+You are standing in a large cavern full of bioluminescent moss.  It must have broken your fall!  The cavern extends to the east and west; at the west end, you think you see a passage leading out of the cavern.
+
+Exits are
+- west (Room 2362)
+- east (Room 2357)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2357 ##
+== Moss cavern ==
+
+You are standing in a large cavern full of bioluminescent moss.  The cavern extends to the west.
+
+Exits are
+- west (Room 2352)
+
+Subroutine @ 0
+<None>
+
+**Objects here:-
+    empty lantern
+------------------------------------------------------------------------
+## Room 2362 ##
+== Moss cavern ==
+
+You are standing in a large cavern full of bioluminescent moss.  The cavern extends to the east.  There is a crevise in the rocks which opens into a passage.
+
+Exits are
+- east (Room 2352)
+- passage (Room 2367)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2367 ##
+== Passage ==
+
+You are in a crevise on the west wall of the moss cavern.  A dark passage leads further west.  There is a ladder here which leads down into a smaller, moss-filled cavern below.
+
+Exits are
+- cavern (Room 2362)
+- ladder (Room 2377)
+- darkness (Room 2372)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2372 ##
+== Passage ==
+
+It is pitch black.  You are likely to be eaten by a grue.
+
+== Passage ==
+
+You feel that your light source is more than sufficient to keep grues away.
+
+Exits are
+- continue (Room 2427)
+- back (Room 2367)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2377 ##
+== Twisty passages ==
+
+You are in a maze of twisty little passages, all dimly lit by more bioluminescent moss.  There is a ladder here leading up.
+
+Exits are
+- ladder (Room 2367)
+- north (Room 2382)
+- south (Room 2387)
+- east (Room 2392)
+- west (Room 2397)
+
+Subroutine @ 3742
+03742: wmem 3726, 0
+03745:  ret 
+
+------------------------------------------------------------------------
+## Room 2382 ##
+== Twisty passages ==
+
+You are in a twisty maze of little passages, all alike.
+
+Exits are
+- north (Room 2387)
+- south (Room 2377)
+- west (Room 2382)
+
+Subroutine @ 3746
+03746: push A
+03748:  set A, 1
+03751: call 3727
+03753:  pop A
+03755:  ret 
+
+------------------------------------------------------------------------
+## Room 2387 ##
+== Twisty passages ==
+
+You are in a maze of little twisty passages, all alike.
+
+Exits are
+- north (Room 2377)
+- south (Room 2382)
+- east (Room 2387)
+
+Subroutine @ 3756
+03756: push A
+03758:  set A, 2
+03761: call 3727
+03763:  pop A
+03765:  ret 
+
+------------------------------------------------------------------------
+## Room 2392 ##
+== Twisty passages ==
+
+You are in a maze of alike little passages, all twisty.
+
+The passage to the east looks very dark; you think you hear a Grue.
+
+Exits are
+- north (Room 2407)
+- south (Room 2392)
+- west (Room 2377)
+- east (Room 2422)
+
+Subroutine @ 3766
+03766: push A
+03768:  set A, 4
+03771: call 3727
+03773:  pop A
+03775:  ret 
+
+------------------------------------------------------------------------
+## Room 2397 ##
+== Twisty passages ==
+
+You are in a little maze of twisty passages, all alike.
+
+Exits are
+- north (Room 2397)
+- south (Room 2402)
+- east (Room 2377)
+
+Subroutine @ 3776
+03776: push A
+03778:  set A, 8
+03781: call 3727
+03783:  pop A
+03785:  ret 
+
+------------------------------------------------------------------------
+## Room 2402 ##
+== Twisty passages ==
+
+You are in a twisty alike of little passages, all maze.
+
+The east passage appears very dark; you feel likely to be eaten by a Grue.
+
+Exits are
+- north (Room 2412)
+- south (Room 2382)
+- west (Room 2387)
+- east (Room 2422)
+
+Subroutine @ 3786
+03786: push A
+03788:  set A, 16
+03791: call 3727
+03793:  pop A
+03795:  ret 
+
+------------------------------------------------------------------------
+## Room 2407 ##
+== Twisty passages ==
+
+You are in a maze of alike twisty passages, all little.
+
+Exits are
+- north (Room 2387)
+- east (Room 2382)
+- south (Room 2407)
+
+Subroutine @ 3796
+03796: push A
+03798:  set A, 32
+03801: call 3727
+03803:  pop A
+03805:  ret 
+
+------------------------------------------------------------------------
+## Room 2412 ##
+== Twisty passages ==
+
+You are in a maze of twisty little passages, all alike.
+
+Exits are
+- west (Room 2377)
+
+Subroutine @ 3806
+03806: push A
+03808: push B
+03810: push C
+03812: push D
+03814:  set A, 64
+03817: call 3727
+03819: push A
+03821: push B
+03823: push C
+03825:  set A, 28236
+03828:  set B, 1531
+03831:  add C, 14440, 3705
+03835: call 1458
+03837:  pop C
+03839:  pop B
+03841:  pop A
+03843: rmem A, 3726
+03846:  set B, 25866
+03849:  set C, 32767
+03852:  set D, 28299
+03855: call 1841
+03857: push A
+03859: push B
+03861: push C
+03863:  set A, 28303
+03866:  set B, 1531
+03869:  add C, 8450, 630
+03873: call 1458
+03875:  pop C
+03877:  pop B
+03879:  pop A
+03881: wmem 2732, 2417
+03884:  pop D
+03886:  pop C
+03888:  pop B
+03890:  pop A
+03892:  ret 
+
+------------------------------------------------------------------------
+## Room 2417 ##
+== Twisty passages ==
+
+You are in a maze of twisty little passages, all alike.
+
+Exits are
+- west (Room 2377)
+
+Subroutine @ 0
+<None>
+
+**Objects here:-
+    can
+------------------------------------------------------------------------
+## Room 2422 ##
+== Twisty passages ==
+
+You are in a twisty maze of little passages, all alike.
+
+Exits are
+- north (Room 2387)
+- south (Room 2382)
+
+Subroutine @ 3656
+03656: push A
+03658: push B
+03660: push C
+03662:  set A, 2680
+03665: call 5990
+03667:   jt A, 3694
+03670:  add A, 2676, 2
+03674: wmem A, 32767
+03677:  add A, 2680, 2
+03681: wmem A, 32767
+03684:  add A, 2672, 2
+03688: wmem A, 32767
+03691: wmem 2732, 2648
+03694:  pop C
+03696:  pop B
+03698:  pop A
+03700:  ret 
+
+------------------------------------------------------------------------
+## Room 2427 ##
+== Dark passage ==
+
+You are in a narrow passage.  There is darkness to the west, but you can barely see a glowing opening to the east.
+
+Exits are
+- west (Room 2432)
+- east (Room 2372)
+
+Subroutine @ 3656
+03656: push A
+03658: push B
+03660: push C
+03662:  set A, 2680
+03665: call 5990
+03667:   jt A, 3694
+03670:  add A, 2676, 2
+03674: wmem A, 32767
+03677:  add A, 2680, 2
+03681: wmem A, 32767
+03684:  add A, 2672, 2
+03688: wmem A, 32767
+03691: wmem 2732, 2648
+03694:  pop C
+03696:  pop B
+03698:  pop A
+03700:  ret 
+
+------------------------------------------------------------------------
+## Room 2432 ##
+== Dark passage ==
+
+You are in a dark, narrow passage.
+
+Exits are
+- east (Room 2427)
+- west (Room 2437)
+
+Subroutine @ 3656
+03656: push A
+03658: push B
+03660: push C
+03662:  set A, 2680
+03665: call 5990
+03667:   jt A, 3694
+03670:  add A, 2676, 2
+03674: wmem A, 32767
+03677:  add A, 2680, 2
+03681: wmem A, 32767
+03684:  add A, 2672, 2
+03688: wmem A, 32767
+03691: wmem 2732, 2648
+03694:  pop C
+03696:  pop B
+03698:  pop A
+03700:  ret 
+
+------------------------------------------------------------------------
+## Room 2437 ##
+== Dark passage ==
+
+You are in a dark, narrow passage.
+
+Exits are
+- east (Room 2432)
+- west (Room 2442)
+
+Subroutine @ 3656
+03656: push A
+03658: push B
+03660: push C
+03662:  set A, 2680
+03665: call 5990
+03667:   jt A, 3694
+03670:  add A, 2676, 2
+03674: wmem A, 32767
+03677:  add A, 2680, 2
+03681: wmem A, 32767
+03684:  add A, 2672, 2
+03688: wmem A, 32767
+03691: wmem 2732, 2648
+03694:  pop C
+03696:  pop B
+03698:  pop A
+03700:  ret 
+
+------------------------------------------------------------------------
+## Room 2442 ##
+== Dark passage ==
+
+You are in a dark, narrow passage.  To the west, you spot some vegetation where the passage expands.
+
+Exits are
+- east (Room 2437)
+- west (Room 2447)
+
+Subroutine @ 3656
+03656: push A
+03658: push B
+03660: push C
+03662:  set A, 2680
+03665: call 5990
+03667:   jt A, 3694
+03670:  add A, 2676, 2
+03674: wmem A, 32767
+03677:  add A, 2680, 2
+03681: wmem A, 32767
+03684:  add A, 2672, 2
+03688: wmem A, 32767
+03691: wmem 2732, 2648
+03694:  pop C
+03696:  pop B
+03698:  pop A
+03700:  ret 
+
+------------------------------------------------------------------------
+## Room 2447 ##
+== Ruins ==
+
+You stand in a large cavern with a huge ruin to the north, overgrown by plant life.  There is a large stone archway to the north acting as the doorway to the ruined complex.  A crevice in the rock to the east leads to an alarmingly dark passageway.
+
+Exits are
+- east (Room 2442)
+- north (Room 2452)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2452 ##
+== Ruins ==
+
+You are in the once-opulent foyer of a massive ruined complex.  There is a door to the south leading to the overgrowth outside and stairs to the north which lead into a larger hall.
+
+Exits are
+- north (Room 2457)
+- south (Room 2447)
+
+Subroutine @ 0
+<None>
+
+**Objects here:-
+    red coin
+------------------------------------------------------------------------
+## Room 2457 ##
+== Ruins ==
+
+You stand in the massive central hall of these ruins.  The walls are crumbling, and vegetation has clearly taken over.  Rooms are attached in all directions.  There is a strange monument in the center of the hall with circular slots and unusual symbols.  It reads:
+
+_ + _ * _^2 + _^3 - _ = 399
+
+Exits are
+- north (Room 2463)
+- south (Room 2452)
+- east (Room 2468)
+- west (Room 2478)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2463 ##
+== Ruins ==
+
+Because it has been so well-protected, this room hardly shows signs of decay.  The walls are covered in elaborate murals and decorated with precious metals and stones.
+
+Exits are
+- south (Room 2457)
+
+Subroutine @ 3893
+03893: push A
+03895: push B
+03897: rmem A, 2462
+03900: rmem B, 27101
+03903:   eq A, A, B
+03907:   jt A, 3940
+03910: push A
+03912: push B
+03914: push C
+03916:  set A, 28347
+03919:  set B, 1531
+03922:  add C, 25459, 2798
+03926: call 1458
+03928:  pop C
+03930:  pop B
+03932:  pop A
+03934: wmem 2732, 2457
+03937: wmem 2733, 2457
+03940:  pop B
+03942:  pop A
+03944:  ret 
+
+**Objects here:-
+    teleporter
+------------------------------------------------------------------------
+## Room 2468 ##
+== Ruins ==
+
+You stand in what seems to have once been a dining hall; broken tables and pottery are scattered everywhere.  A staircase here leads down.
+
+Exits are
+- down (Room 2473)
+- west (Room 2457)
+
+Subroutine @ 0
+<None>
+
+**Objects here:-
+    concave coin
+------------------------------------------------------------------------
+## Room 2473 ##
+== Ruins ==
+
+This seems to be a kitchen; there are brick stoves and shelves along the wall.  Everything here has fallen into disrepair.
+
+Exits are
+- up (Room 2468)
+
+Subroutine @ 0
+<None>
+
+**Objects here:-
+    corroded coin
+------------------------------------------------------------------------
+## Room 2478 ##
+== Ruins ==
+
+You find yourself in what was once the living quarters for the complex.  Many smaller rooms which once had walls to divide them now lay in disarray.  There is a staircase up here.
+
+Exits are
+- up (Room 2483)
+- east (Room 2457)
+
+Subroutine @ 0
+<None>
+
+**Objects here:-
+    blue coin
+------------------------------------------------------------------------
+## Room 2483 ##
+== Ruins ==
+
+This was long ago a lavish throne room.  Dried-up fountains and crumbling statues line the walls, and the carved stone throne in the center of the room is falling apart.
+
+Exits are
+- down (Room 2478)
+
+Subroutine @ 0
+<None>
+
+**Objects here:-
+    shiny coin
+------------------------------------------------------------------------
+## Room 2488 ##
+== Synacor Headquarters ==
+
+You stand in the lobby of what appears to be a really fun place to work!  Sadly, there doesn't seem to be anyone around at the moment, so you make a note to call them later.  The bookshelf here looks like it might have something interesting in it, though.
+
+Exits are
+- outside (Room 2493)
+
+Subroutine @ 0
+<None>
+
+**Objects here:-
+    business card
+    strange book
+------------------------------------------------------------------------
+## Room 2493 ##
+== Synacor Headquarters ==
+
+It's a warm, sunny day!  While the breeze from Lake Erie is certainly refreshing, you don't see anything here that will help you with your quest.
+
+Exits are
+- inside (Room 2488)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2498 ##
+== Beach ==
+
+This is a sandy beach in a cove on some tropical island.  It is raining.  The ocean is to your south, and heavy foliage is to your north; the beach extends west and east.
+
+Exits are
+- west (Room 2503)
+- east (Room 2508)
+- north (Room 2513)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2503 ##
+== Beach ==
+
+This is a sandy beach in a cove on some tropical island.  It is raining.  To your west is an embankment of the cove which looks too steep to climb.  The beach extends to the east, and there is dense foliage to the north.  The ocean to the south seems uninviting.
+
+Exits are
+- east (Room 2498)
+- north (Room 2513)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2508 ##
+== Beach ==
+
+This is a sandy beach in a cove on some tropical island.  It is raining.  The steep cove embankment to your east blocks your path, and the ocean waters here look unsafe.  The beach extends to the west, and there is dense foliage to the north.
+
+Exits are
+- west (Room 2498)
+- north (Room 2518)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2513 ##
+== Tropical Island ==
+
+The large trees here seem to be protecting you from the rain.  As you push through the undergrowth, you can hear birds chirping overhead.  There is a steep rock face to your west blocking your path.
+
+Exits are
+- north (Room 2523)
+- south (Room 2498)
+- east (Room 2518)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2518 ##
+== Tropical Island ==
+
+The east embankment of the cove towers over you.  It produces a small waterfall here which cascades excitedly into a pool.
+
+Exits are
+- north (Room 2523)
+- south (Room 2508)
+- west (Room 2513)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2523 ##
+== Tropical Island ==
+
+The embankment of the cove come toegher here to your east and west.  Between these tall rock faces, there is a narrow, overgrown path leading north.  You hear waves lapping up on a beach through the dense vegetation to your south.
+
+Exits are
+- north (Room 2528)
+- south (Room 2513)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2528 ##
+== Tropical Island ==
+
+You are on a narrow path between two steep rock faces which look like they have been here for thousands of years.  Rain trickles down through the vegetation and moss, and through the leaves you can occasionally see a sliver of light hundreds of feet above you where the rock walls end.
+
+Exits are
+- north (Room 2533)
+- south (Room 2523)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2533 ##
+== Tropical Island ==
+
+The narrow path slopes downward to the north and leads to the mouth of a small cave.  A sign nearby reads "Treasure Vault Access", but different handwriting has crossed this out and written "Lair of Horrible Monster!  All non-pirates keep out!".
+
+Exits are
+- north (Room 2538)
+- south (Room 2528)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2538 ##
+== Tropical Cave ==
+
+You stand at the entrance to a natural cave which looks like it hasn't been visited in quite some time.  Light pours in through the opening to the south, while fireflies light the path further into the cave to the north.
+
+Exits are
+- north (Room 2543)
+- south (Room 2533)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2543 ##
+== Tropical Cave ==
+
+Fireflies slowly drift around you and light the tunnel, which seems to get brighter to the south, but dimmer to the north.
+
+Exits are
+- north (Room 2548)
+- south (Room 2538)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2548 ##
+== Tropical Cave ==
+
+The cave is a little wider here.  You find the cobweb-encrusted remains of a small camp, and although you don't suspect the broken pieces of tables and chairs will prove useful to your quest, the fireflies seem to like using the debris as a shelter.  A passageway leads north and south, and there is an alcove to the east.
+
+Exits are
+- north (Room 2558)
+- south (Room 2543)
+- east (Room 2553)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2553 ##
+== Tropical Cave Alcove ==
+
+At the back of this alcove, there is a small table, a chair, and a broken lantern.  It looks like this space was used much more recently than the camp to the west.
+
+Exits are
+- west (Room 2548)
+
+Subroutine @ 0
+<None>
+
+**Objects here:-
+    journal
+------------------------------------------------------------------------
+## Room 2558 ##
+== Tropical Cave ==
+
+This tunnel slopes deeper underground to the north, but the fireflies are all around to light your path.
+
+Exits are
+- north (Room 2623)
+- south (Room 2548)
+
+Subroutine @ 4611
+04611: push A
+04613:  add A, 2716, 2
+04617: rmem A, A
+04620:   jt A, 4657
+04623:  set A, 26717
+04626: call 1518
+04628: rmem A, 2732
+04631:   eq A, A, 2623
+04635:   jt A, 4645
+04638:  set A, 26725
+04641: call 1518
+04643:  jmp 4650
+04645:  set A, 26731
+04648: call 1518
+04650:  set A, 26737
+04653: call 1518
+04655: call 4660
+04657:  pop A
+04659:  ret 
+
+------------------------------------------------------------------------
+## Room 2563 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting a '*' symbol.
+
+Exits are
+- east (Room 2568)
+- south (Room 2583)
+
+Subroutine @ 3958
+03958: push A
+03960: push B
+03962:  set A, 2
+03965:  set B, 0
+03968: call 4218
+03970:  pop B
+03972:  pop A
+03974:  ret 
+
+------------------------------------------------------------------------
+## Room 2568 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting the number '8'.
+
+Exits are
+- east (Room 2573)
+- south (Room 2588)
+- west (Room 2563)
+
+Subroutine @ 3975
+03975: push A
+03977: push B
+03979:  set A, 8
+03982:  set B, 1
+03985: call 4279
+03987:  pop B
+03989:  pop A
+03991:  ret 
+
+------------------------------------------------------------------------
+## Room 2573 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting a '-' symbol.
+
+Exits are
+- east (Room 2578)
+- south (Room 2593)
+- west (Room 2568)
+
+Subroutine @ 3992
+03992: push A
+03994: push B
+03996:  set A, 1
+03999:  set B, 2
+04002: call 4218
+04004:  pop B
+04006:  pop A
+04008:  ret 
+
+------------------------------------------------------------------------
+## Room 2578 ##
+== Vault Door ==
+
+You stand before the door to the vault; it has a large '30' carved into it.  Affixed to the wall near the door, there is a running hourglass which never seems to run out of sand.
+
+The floor of this room is a large mosaic depicting the number '1'.
+
+Exits are
+- south (Room 2598)
+- west (Room 2573)
+- vault (Room 2643)
+
+Subroutine @ 4009
+04009: push A
+04011: push B
+04013:  set A, 1
+04016:  set B, 3
+04019: call 4279
+04021: call 4533
+04023:  pop B
+04025:  pop A
+04027:  ret 
+
+------------------------------------------------------------------------
+## Room 2583 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting the number '4'.
+
+Exits are
+- north (Room 2563)
+- east (Room 2588)
+- south (Room 2603)
+
+Subroutine @ 4028
+04028: push A
+04030: push B
+04032:  set A, 4
+04035:  set B, 4
+04038: call 4279
+04040:  pop B
+04042:  pop A
+04044:  ret 
+
+------------------------------------------------------------------------
+## Room 2588 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting a '*' symbol.
+
+Exits are
+- north (Room 2568)
+- east (Room 2593)
+- south (Room 2608)
+- west (Room 2583)
+
+Subroutine @ 4045
+04045: push A
+04047: push B
+04049:  set A, 2
+04052:  set B, 5
+04055: call 4218
+04057:  pop B
+04059:  pop A
+04061:  ret 
+
+------------------------------------------------------------------------
+## Room 2593 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting the number '11'.
+
+Exits are
+- north (Room 2573)
+- east (Room 2598)
+- south (Room 2613)
+- west (Room 2588)
+
+Subroutine @ 4062
+04062: push A
+04064: push B
+04066:  set A, 11
+04069:  set B, 6
+04072: call 4279
+04074:  pop B
+04076:  pop A
+04078:  ret 
+
+------------------------------------------------------------------------
+## Room 2598 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting a '*' symbol.
+
+Exits are
+- north (Room 2578)
+- south (Room 2618)
+- west (Room 2593)
+
+Subroutine @ 4079
+04079: push A
+04081: push B
+04083:  set A, 2
+04086:  set B, 7
+04089: call 4218
+04091:  pop B
+04093:  pop A
+04095:  ret 
+
+------------------------------------------------------------------------
+## Room 2603 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting a '+' symbol.
+
+Exits are
+- north (Room 2583)
+- east (Room 2608)
+- south (Room 2623)
+
+Subroutine @ 4096
+04096: push A
+04098: push B
+04100:  set A, 0
+04103:  set B, 8
+04106: call 4218
+04108:  pop B
+04110:  pop A
+04112:  ret 
+
+------------------------------------------------------------------------
+## Room 2608 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting the number '4'.
+
+Exits are
+- north (Room 2588)
+- east (Room 2613)
+- south (Room 2628)
+- west (Room 2603)
+
+Subroutine @ 4113
+04113: push A
+04115: push B
+04117:  set A, 4
+04120:  set B, 9
+04123: call 4279
+04125:  pop B
+04127:  pop A
+04129:  ret 
+
+------------------------------------------------------------------------
+## Room 2613 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting a '-' symbol.
+
+Exits are
+- north (Room 2593)
+- east (Room 2618)
+- south (Room 2633)
+- west (Room 2608)
+
+Subroutine @ 4130
+04130: push A
+04132: push B
+04134:  set A, 1
+04137:  set B, 10
+04140: call 4218
+04142:  pop B
+04144:  pop A
+04146:  ret 
+
+------------------------------------------------------------------------
+## Room 2618 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting the number '18'.
+
+Exits are
+- north (Room 2598)
+- south (Room 2638)
+- west (Room 2613)
+
+Subroutine @ 4147
+04147: push A
+04149: push B
+04151:  set A, 18
+04154:  set B, 11
+04157: call 4279
+04159:  pop B
+04161:  pop A
+04163:  ret 
+
+------------------------------------------------------------------------
+## Room 2623 ##
+== Vault Antechamber ==
+
+You are in the antechamber to a grid of rooms that control the door to the vault.  You notice the number '22' is carved into the orb's pedestal.
+
+Exits are
+- north (Room 2603)
+- east (Room 2628)
+- south (Room 2558)
+
+Subroutine @ 4164
+04164: call 4611
+04166:  ret 
+
+**Objects here:-
+    orb
+------------------------------------------------------------------------
+## Room 2628 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting a '-' symbol.
+
+Exits are
+- north (Room 2608)
+- east (Room 2633)
+- west (Room 2623)
+
+Subroutine @ 4167
+04167: push A
+04169: push B
+04171:  set A, 1
+04174:  set B, 12
+04177: call 4218
+04179:  pop B
+04181:  pop A
+04183:  ret 
+
+------------------------------------------------------------------------
+## Room 2633 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting the number '9'.
+
+Exits are
+- north (Room 2613)
+- east (Room 2638)
+- west (Room 2628)
+
+Subroutine @ 4184
+04184: push A
+04186: push B
+04188:  set A, 9
+04191:  set B, 13
+04194: call 4279
+04196:  pop B
+04198:  pop A
+04200:  ret 
+
+------------------------------------------------------------------------
+## Room 2638 ##
+== Vault Lock ==
+
+You are in a grid of rooms that control the door to the vault.
+
+The floor of this room is a large mosaic depicting a '*' symbol.
+
+Exits are
+- north (Room 2618)
+- west (Room 2633)
+
+Subroutine @ 4201
+04201: push A
+04203: push B
+04205:  set A, 2
+04208:  set B, 14
+04211: call 4218
+04213:  pop B
+04215:  pop A
+04217:  ret 
+
+------------------------------------------------------------------------
+## Room 2643 ##
+== Vault ==
+
+This vault contains incredible riches!  Piles of gold and platinum coins surround you, and the walls are adorned with topazes, rubies, sapphires, emeralds, opals, dilithium crystals, elerium-115, and unobtainium.
+
+Exits are
+- leave (Room 2578)
+
+Subroutine @ 4690
+04690: push A
+04692:  add A, 2716, 2
+04696: rmem A, A
+04699:   eq A, A, 32767
+04703:   jt A, 4717
+04706:  set A, 26824
+04709: call 1518
+04711: wmem 2732, 2578
+04714: wmem 2733, 2578
+04717:  pop A
+04719:  ret 
+
+**Objects here:-
+    mirror
+------------------------------------------------------------------------
+## Room 2648 ##
+== Fumbling around in the darkness ==
+
+Without a source of light, you have become hopelessly lost and are fumbling around in the darkness.
+
+Exits are
+- forward (Room 2653)
+- back (Room 2653)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2653 ##
+== Fumbling around in the darkness ==
+
+You can't seem to find your way.  However, you do think you hear low growling in the distance.
+
+Exits are
+- run (Room 2658)
+- investigate (Room 2658)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2658 ##
+== Panicked and lost ==
+
+The growling is getting louder.  Did I mention there are Grues down here?
+
+Exits are
+- run (Room 2663)
+- wait (Room 2663)
+- hide (Room 2663)
+
+Subroutine @ 0
+<None>
+
+------------------------------------------------------------------------
+## Room 2663 ##
+== eaten ==
+
+
+
+Exits are
+
+Subroutine @ 3701
+03701: push A
+03703: push B
+03705: push C
+03707:  set A, 28204
+03710:  set B, 1531
+03713:  add C, 7208, 24765
+03717: call 1458
+03719:  pop C
+03721:  pop B
+03723:  pop A
+03725: halt 
+03726: halt 
+03727: push B
+03729: rmem B, 3726
+03732:   or B, B, A
+03736: wmem 3726, B
+03739:  pop B
+03741:  ret 
+
+------------------------------------------------------------------------
