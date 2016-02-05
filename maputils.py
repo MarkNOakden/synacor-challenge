@@ -83,6 +83,7 @@ if __name__ == '__main__':
     # renderers using pygraphviz
     from vmlib import vm
     import pygraphviz as pgv
+    import re
 
     theMap = pgv.AGraph(directed=True)
     #
@@ -108,7 +109,19 @@ if __name__ == '__main__':
     while raddr <= 2663:
         r = room()
         r.fromAddr(myvm, raddr)
-        theMap.add_node(r.roomID, label='({}) {}'.format(r.roomID, r.title))
+        try:
+            node = theMap.get_node(r.roomID)
+            if r.title == 'Vault Lock':
+                additional = re.search(r'(\'.+\')', r.description[0])
+                if additional is not None:
+                    r.title += ' ' + additional.group(1)
+            node.attr['label'] = '({}) {}'.format(r.roomID, r.title)
+        except KeyError:
+            if r.title == 'Vault Lock':
+                additional = re.search(r'(\'.+\')', r.description[0])
+                if additional is not None:
+                    r.title += ' ' + additional.group(1)
+            theMap.add_node(r.roomID, label='({}) {}'.format(r.roomID, r.title))
         for d, t in r.exits:
             theMap.add_edge(r.roomID, t, label=d)
         print r
@@ -122,6 +135,8 @@ if __name__ == '__main__':
         if raddr == 2462:
             raddr += 1
 
+    theMap.write('room_map.dot')
+    
     theMap.layout(prog='dot')
     theMap.draw('room_map_dot.png')
 

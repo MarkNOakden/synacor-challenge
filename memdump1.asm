@@ -958,11 +958,11 @@
 02146:  pop B
 02148:  ret
 	
-02149:  add A, A, B // A = A + B
-02153:   gt B, B, A // B = (B > A)
+02149:  add A, A, B // A = A + B // called for green orb
+02153:   gt B, B, A // B = (B > A) - essentially did preceding + overflow
 02157:  ret
 	
-02158: push C
+02158: push C // called for red orb
 02160:   gt C, B, A // C = (B > A)
 02164: mult B, B, 32767 // B = '32768 - B'
 02168:  add A, A, B // A = A + B
@@ -971,7 +971,7 @@
 02177:  ret
 	
 	
-02178:   jf A, 2241
+02178:   jf A, 2241 // called for yellow orb
 02181:   jf B, 2241
 02184: push C
 02186: push D
@@ -1972,10 +1972,10 @@
 	//
 	// data
 	//
-03951: halt
+03951: halt // stores pointer 0,1,2 for colour of orb output of @4405
 	
 03952: ??? (22) '\x16' // initialised? by subr at 4660 - weight of orb?
-03953: halt 
+03953: halt // turns while holding orb
 03954: halt 
 03955: halt 
 03956: halt 
@@ -2120,24 +2120,24 @@
 04215:  pop A
 04217:  ret
 	
-04218: push A
+04218: push A // called for operator rooms with A, B set
 04220: push B
 04222: push C
 04224:  add C, 2716, 2
 04228: rmem C, C
-04231:   jt C, 4272
-04234: call 4405
+04231:   jt C, 4272 // if player does not have the orb return
+04234: call 4405 // anipulates orb parameters
 04236: wmem 3951, A
-04239:  add B, A, 3945
+04239:  add B, A, 3945 // 3945 is where pointers to colour name strings are
 04243: rmem B, B
 04246:  set A, 26024
-04249: call 1518
+04249: call 1518 // As you enter the room, the symbol on the floor briefly flashes
 04251:  set A, B
-04254: call 1518
+04254: call 1518 // colour green, red, yellow for 0,1,2 output from 4405
 04256:  set A, 26088
-04259: call 1518
+04259: call 1518 // .  The orb begins subtly glowing 
 04261:  set A, B
-04264: call 1518
+04264: call 1518 // colour green, red, yellow for 0,1,2 output from 4405
 04266:  out '.'
 04268:  out '\n'
 04270:  out '\n'
@@ -2146,7 +2146,7 @@
 04276:  pop A
 04278:  ret
 	
-04279: push A 
+04279: push A // called for number rooms
 04281: push B
 04283: push C
 04285:  add C, 2716, 2
@@ -2212,7 +2212,7 @@
 04440:  add A, F, 2 // A = F + 2
 04444: call 2281 //  A = 2**A
 04446: rmem B, 3954
-04449:   or A, B, A // A = 2**A bit of @3954
+04449:   or A, B, A // A = set the 2**A bit of @3954
 04453:  set B, E
 04456: call 2248 // rotate A left by B bits
 04458: wmem 3954, A // @3954 = A
@@ -2246,33 +2246,36 @@
 04529: wmem B, A // @<addr> = A
 04532:  ret
 	
-04533: push A
+04533: push A // part fo vault door verification
 04535:  add A, 2716, 2
 04539: rmem A, A
-04542:   jt A, 4608
+04542:   jt A, 4608 // of player doesn't have orb, return
 04545:  set A, 26321
-04548: call 1518
+04548: call 1518 // as you approach the vault door
 04550: rmem A, 3952
-04553:   eq A, A, 30
+04553:   eq A, A, 30 // is the weight == 30?
 04557:   jt A, 4574
 04560:  set A, 26354
-04563: call 1518
+04563: call 1518 // the number on the vault door flashes black.
 04565:  set A, 26398
-04568: call 1518
-04570: call 4660
+04568: call 1518 // the orb evaporates out of your hands
+04570: call 4660 // reset orb to antechamber
 04572:  jmp 4608
 04574:  set A, 26440
-04577: call 1518
-04579: rmem A, 3954
-04582:  add A, A, 1
-04586:   jt A, 4596
+04577: call 1518 // the number on the vault door flashes white
+04579: rmem A, 3954 // A = @3954
+04582:  add A, A, 1 // A = A + 1
+04586:   jt A, 4596 // if A != 0 (i.e. if @3954 != 32767) 
 04589:  set A, 26484
-04592: call 1518
+04592: call 1518 //   The hourglass has already run out.  It flashes
+	// black and flips over, restarting the flow of sand.
 04594:  jmp 4565
 04596:  set A, 26584
-04599: call 1518
+04599: call 1518 //   The hourglass is still running!  It flashes
+	// white!  You hear a click from the vault door.  The orb
+	//evaporates out of hour hands.
 04601:  add A, 2716, 2
-04605: wmem A, 32767
+04605: wmem A, 32767 // orb no onger exists
 04608:  pop A
 04610:  ret
 	
