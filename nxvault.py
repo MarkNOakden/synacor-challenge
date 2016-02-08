@@ -43,10 +43,9 @@ if __name__ == '__main__':
     nx.draw_graphviz(graph)
     plt.savefig('vault.png')
 
-    #paths = nx.all_simple_paths(graph, (0,0), (3,3))
+    paths = nx.all_simple_paths(graph, (0,0), (3,3))
     #print list(paths)
-    for p in allpaths(graph, (0,0), (3,3), None, 13):
-        print p
+    for p in paths:
         op = None
         weight = 22
         for node in p:
@@ -63,11 +62,11 @@ if __name__ == '__main__':
             print graph.node[node]['label'],
             while weight < 0:
                 weight = weight + 32768
-            print '=',weight,
-            if weight == 30:
-                print '<----- !!!***'
-            else:
-                print
+        print '=',weight,
+        if weight == 30:
+            print '<----- !!!***'
+        else:
+            print
 
 # pseudocode
 #
