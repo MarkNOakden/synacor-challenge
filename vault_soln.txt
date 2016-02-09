@@ -1,0 +1,15 @@
+(see nxvault.py for derivation)
+    
+ABCD
+EFGH
+IJKL
+MNOP
+
+   s
+ w + e
+   n
+   
+ A E F G  K J F G  H G  K O P
+  n e e n  w s e e  w n  n e
+
+ 22 + 4 - 11 * 4 - 18 - 11 - 1 = 30

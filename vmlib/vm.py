@@ -2,7 +2,9 @@
 #
 # vm implementation for the synacor challenge
 #
-# started 6.1.2016
+#   challenge started: 2016-01-06
+# challenge completed: 2016-02-09
+#
 import sys
 import itertools
 import shlex

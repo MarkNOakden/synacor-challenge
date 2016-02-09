@@ -959,13 +959,13 @@
 02148:  ret
 	
 02149:  add A, A, B // A = A + B // called for green orb
-02153:   gt B, B, A // B = (B > A) - essentially did preceding + overflow
+02153:   gt B, B, A // B = (B > A) - essentially did preceding addition overflow
 02157:  ret
 	
 02158: push C // called for red orb
 02160:   gt C, B, A // C = (B > A)
 02164: mult B, B, 32767 // B = '32768 - B'
-02168:  add A, A, B // A = A + B
+02168:  add A, A, B // A = A + B (effectively A - B because of prior line)
 02172:  set B, C // B = C
 02175:  pop C
 02177:  ret
@@ -977,12 +977,12 @@
 02186: push D
 02188:   gt C, B, A
 02192:   jt C, 2204
-02195:  set C, A
-02198:  set A, B
-02201:  set B, C
-02204:  set C, A
-02207:  set A, 0
-02210:  add A, A, B
+02195:  set C, A    // /
+02198:  set A, B    // | swap A and B
+02201:  set B, C    // |
+02204:  set C, A    // | then set C to A (which was B)
+02207:  set A, 0    // | and set A to 0
+02210:  add A, A, B // A = A + B
 02214:   gt D, B, A
 02218:   jt D, 2233
 02221:  add C, C, 32767
